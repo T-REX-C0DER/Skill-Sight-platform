@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PHP Assessment - SkillSight</title>
+  <link rel="stylesheet" href="php-test.css">
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <h1>PHP Assessment</h1>
+      <div class="time">Time Remaining: <span id="timer">30:00</span></div>
+    </header>
+
+    <div class="progress-row">
+      <div class="progress-info"><span id="progressText">Question 1 of 25</span></div>
+      <div class="progress-bar" aria-hidden="true"><div id="progressFill" class="progress-fill" style="width:4%"></div></div>
+    </div>
+
+    <main class="content">
+      <section class="left">
+        <div class="question-box">
+          <pre class="code-snippet" id="codeSnippet" style="display:none"></pre>
+          <h2 id="questionText">Loading question...</h2>
+          <div id="options" class="options"></div>
+        </div>
+
+        <div class="controls">
+          <button id="prevBtn" class="btn">Previous</button>
+          <button id="markBtn" class="btn">Mark for Review</button>
+          <button id="nextBtn" class="btn primary">Next Question</button>
+        </div>
+
+        <div class="footer-actions">
+          <button id="submitBtn" class="btn danger">Submit Assessment</button>
+        </div>
+      </section>
+
+      <aside class="right">
+        <div class="proctor-card">
+          <!-- Image section is intentionally blank as requested -->
+          <div class="image-placeholder" aria-hidden="true"></div>
+
+          <div class="status">
+            <h3>AI Proctor Status</h3>
+            <p id="proctorState">Active & Monitoring</p>
+            <div class="nav-grid" id="questionNavigator"></div>
+            <div class="summary">Answered <span id="answeredCount">0</span> of 25 questions</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="php-questions.js"></script>
+  <script src="php-test.js"></script>
+  <script src="ai-proctoring.js"></script>
+</body>
+</html>

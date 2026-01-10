@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SkillSight — Dashboard — Arjun Patel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="topbar-left">
+        <div class="logo-compact">SS</div>
+        <div class="search"><input placeholder="Search jobs, companies, or skills..." aria-label="Search"></div>
+      </div>
+      <nav class="topbar-right">
+        <button class="icon-btn" aria-label="Home"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 10.5L12 4l9 6.5v7A1.5 1.5 0 0119.5 19h-15A1.5 1.5 0 013 17.5v-7z" stroke="#0b1220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Home</span></button>
+        <button class="icon-btn" aria-label="Jobs"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M3 7.5h18v12a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 013 19.5v-12z" stroke="#0b1220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 7.5V6a2 2 0 012-2h4a2 2 0 012 2v1.5" stroke="#0b1220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Jobs</span></button>
+        <button class="icon-btn" aria-label="Tests"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M9 11l2 2 4-4" stroke="#0b1220" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="3" width="18" height="18" rx="2" stroke="#0b1220" stroke-width="1.2"/></svg><span>Tests</span></button>
+        <button class="icon-btn" aria-label="Messages"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="#0b1220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Messages</span></button>
+        <button class="icon-btn" aria-label="Alerts"><svg viewBox="0 0 24 24" width="16" height="16" fill="none"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5" stroke="#0b1220" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Alerts</span></button>
+        <div class="profile" tabindex="0" aria-haspopup="true" aria-expanded="false">
+          <div class="avatar" aria-hidden="true">A</div>
+          <div class="profile-name">Arjun Patel</div>
+
+          <div class="profile-menu" role="menu" aria-hidden="true">
+            <a href="#" class="menu-item" role="menuitem">View Profile</a>
+            <a href="#" class="menu-item" role="menuitem">Settings</a>
+            <button class="menu-item logout" role="menuitem">Log out</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <!-- Left column -->
+      <aside class="col left">
+        <div class="left-fixed">
+          <div class="profile-card">
+            <div class="profile-hero">
+              <div class="avatar-large">AP</div>
+              <div class="profile-meta">
+                <h3>Arjun Patel</h3>
+                <div class="muted">Senior Full Stack Engineer</div>
+                <div class="badge green">Verified Top 5%</div>
+              </div>
+            </div>
+            <div class="profile-strength">
+              <div class="label">Profile Strength</div>
+              <div class="meter"><div style="width:85%"></div><span>85%</span></div>
+            </div>
+          </div>
+
+          <div class="card small">
+            <h4>Verified Skills</h4>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-left">
+                  <span class="skill-icon react" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><circle cx="12" cy="12" r="1.5" fill="#61DAFB"/><path d="M12 2s4 0 6 2 2 6 0 8-6 6-6 6-4-2-6-4S6 6 12 2z" stroke="#61DAFB" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/></svg></span>
+                  <div class="skill-name">React.js</div>
+                </div>
+                <div class="skill-score">92/100</div>
+              </li>
+
+              <li>
+                <div class="skill-left">
+                  <span class="skill-icon node" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M12 2l6 3v6c0 5-6 11-6 11s-6-6-6-11V5l6-3z" fill="#68A063"/></svg></span>
+                  <div class="skill-name">Node.js</div>
+                </div>
+                <div class="skill-score">88/100</div>
+              </li>
+
+              <li>
+                <div class="skill-left">
+                  <span class="skill-icon mongo" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M12 2s4 3 4 7-2 8-4 9-4-3-4-7 2-9 4-9z" fill="#4EA05A"/></svg></span>
+                  <div class="skill-name">MongoDB</div>
+                </div>
+                <button class="btn-ghost small">Verify</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card small">
+            <h4>Top Hiring Companies</h4>
+            <ul class="companies">
+              <li><span class="logo-square">T</span><div><strong>TechFlow</strong><div class="muted">12 Jobs</div></div><button class="follow">Follow</button></li>
+              <li><span class="logo-square">G</span><div><strong>GreenEnergy</strong><div class="muted">8 Jobs</div></div><button class="follow">Follow</button></li>
+              <li><span class="logo-square">S</span><div><strong>ScaleUp</strong><div class="muted">5 Jobs</div></div><button class="follow">Follow</button></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center column -->
+      <section class="col center">
+        <div class="banner">
+          <div class="badge small">LIVE PROCTORING ENABLED</div>
+          <h2>Ready to prove your Python skills?</h2>
+          <p class="muted">TechFlow Inc. has invited you to take a 45-minute live coding assessment. Secure your badge today.</p>
+          <button class="btn primary" onclick="window.location.href='../Tests/python-test.html'">Start Assessment</button>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><h3>Recommended Skill Challenges</h3><a class="link view-all" href="#" aria-expanded="false">View all</a></div>
+          <div class="cards">
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">UI</div><div class="difficulty medium">Medium</div></div>
+              <h4>UI/UX Design Systems</h4>
+              <div class="muted small">By CreativeStudio • 30 mins • 1.2k took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: ON</div><a class="link small">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">SQL</div><div class="difficulty hard">Hard</div></div>
+              <h4>Advanced SQL Queries</h4>
+              <div class="muted small">By DataCorp • 60 mins • 850 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: ON</div><a class="link small" href="../Tests/sql-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">JS</div><div class="difficulty easy">Easy</div></div>
+              <h4>JavaScript Fundamentals</h4>
+              <div class="muted small">By ScriptSchool • 30 mins • 2.3k took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: OFF</div><a class="link small" href="../Tests/javascript-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">TS</div><div class="difficulty medium">Medium</div></div>
+              <h4>TypeScript Advanced Patterns</h4>
+              <div class="muted small">By TypedUp • 45 mins • 980 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: ON</div><a class="link small" href="../Tests/typescript-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">GO</div><div class="difficulty hard">Hard</div></div>
+              <h4>Go Concurrency & Performance</h4>
+              <div class="muted small">By Gophers • 60 mins • 420 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: OFF</div><a class="link small" href="../Tests/go-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">RS</div><div class="difficulty hard">Hard</div></div>
+              <h4>Rust Systems Programming</h4>
+              <div class="muted small">By FerrisTech • 75 mins • 210 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: ON</div><a class="link small" href="../Tests/rust-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">C#</div><div class="difficulty medium">Medium</div></div>
+              <h4>C# .NET Core Web APIs</h4>
+              <div class="muted small">By DotBuild • 50 mins • 680 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: ON</div><a class="link small" href="../Tests/csharp-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">JV</div><div class="difficulty medium">Medium</div></div>
+              <h4>Java Microservices</h4>
+              <div class="muted small">By JVMWorks • 60 mins • 560 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: OFF</div><a class="link small" href="../Tests/java-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">PHP</div><div class="difficulty easy">Easy</div></div>
+              <h4>PHP Security Essentials</h4>
+              <div class="muted small">By SecurePHP • 30 mins • 460 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: OFF</div><a class="link small" href="../Tests/php-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">KT</div><div class="difficulty medium">Medium</div></div>
+              <h4>Kotlin Android Development</h4>
+              <div class="muted small">By KotlinLab • 45 mins • 390 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: ON</div><a class="link small" href="../Tests/kotlin-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">SW</div><div class="difficulty medium">Medium</div></div>
+              <h4>Swift iOS Essentials</h4>
+              <div class="muted small">By AppleDev • 45 mins • 320 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: OFF</div><a class="link small" href="../Tests/swift-test.html">Take Test →</a></div>
+            </article>
+
+            <article class="skill-card">
+              <div class="card-head"><div class="skill-mark">DK</div><div class="difficulty hard">Hard</div></div>
+              <h4>Docker & Kubernetes</h4>
+              <div class="muted small">By CloudOps • 90 mins • 750 took this</div>
+              <div class="card-foot"><div class="pill muted">AI Monitoring: ON</div><a class="link small" href="../Tests/docker-test.html">Take Test →</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="section-header"><h3>Jobs Matching Your Verified Skills</h3>
+            <div class="filters"><button class="filter active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="recommended" aria-pressed="false">Recommended</button><button class="filter" data-filter="remote" aria-pressed="false">Remote</button></div>
+          </div>
+
+          <div class="job-list">
+            <div class="job-card" data-recommended="true" data-remote="true" data-skill="react">
+              <div class="job-left"><div class="avatar-sm">R</div><div>
+                <strong>Senior React Developer</strong>
+                <div class="muted">TechFlow • San Francisco (Remote)</div>
+                <div class="tags"><span class="tag green">React Skill Verified</span><span class="tag light">$140k - $180k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="true" data-remote="false" data-skill="node">
+              <div class="job-left"><div class="avatar-sm">N</div><div>
+                <strong>Backend Engineer (Node.js)</strong>
+                <div class="muted">Nexus Systems • New York (Hybrid)</div>
+                <div class="tags"><span class="tag green">Node.js Skill Verified</span><span class="tag light">$130k - $160k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="false" data-remote="true" data-skill="vue">
+              <div class="job-left"><div class="avatar-sm">V</div><div>
+                <strong>Frontend Engineer (Vue.js)</strong>
+                <div class="muted">Volt Labs • Remote</div>
+                <div class="tags"><span class="tag green">React Skill Verified</span><span class="tag light">$120k - $150k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="false" data-remote="true" data-skill="python">
+              <div class="job-left"><div class="avatar-sm">P</div><div>
+                <strong>Python Backend Developer</strong>
+                <div class="muted">PyWorks • Austin (Remote)</div>
+                <div class="tags"><span class="tag green">Node.js Skill Verified</span><span class="tag light">$125k - $155k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="true" data-remote="true" data-skill="fullstack">
+              <div class="job-left"><div class="avatar-sm">F</div><div>
+                <strong>Full Stack Engineer (React/Node)</strong>
+                <div class="muted">FullFrame • Remote</div>
+                <div class="tags"><span class="tag green">React Skill Verified</span><span class="tag light">$150k - $190k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="true" data-remote="false" data-skill="data">
+              <div class="job-left"><div class="avatar-sm">D</div><div>
+                <strong>Data Engineer</strong>
+                <div class="muted">DataCorp • Seattle (On-site)</div>
+                <div class="tags"><span class="tag green">MongoDB Skill Verified</span><span class="tag light">$140k - $170k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="false" data-remote="false" data-skill="ml">
+              <div class="job-left"><div class="avatar-sm">M</div><div>
+                <strong>Machine Learning Engineer</strong>
+                <div class="muted">ModelWorks • Boston (Hybrid)</div>
+                <div class="tags"><span class="tag green">React Skill Verified</span><span class="tag light">$160k - $200k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="false" data-remote="true" data-skill="qa">
+              <div class="job-left"><div class="avatar-sm">Q</div><div>
+                <strong>QA Automation Engineer</strong>
+                <div class="muted">AssureTech • Remote</div>
+                <div class="tags"><span class="tag green">Node.js Skill Verified</span><span class="tag light">$110k - $140k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="true" data-remote="true" data-skill="mobile">
+              <div class="job-left"><div class="avatar-sm">B</div><div>
+                <strong>Mobile Engineer (React Native)</strong>
+                <div class="muted">BridgeMobile • San Diego (Remote)</div>
+                <div class="tags"><span class="tag green">React Skill Verified</span><span class="tag light">$130k - $165k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+            <div class="job-card" data-recommended="false" data-remote="true" data-skill="sre">
+              <div class="job-left"><div class="avatar-sm">S</div><div>
+                <strong>Site Reliability Engineer</strong>
+                <div class="muted">ScaleOps • Remote</div>
+                <div class="tags"><span class="tag green">Node.js Skill Verified</span><span class="tag light">$150k - $185k</span></div>
+              </div></div>
+              <div class="job-right"><button class="btn success">Easy Apply</button><button class="btn ghost">View Details</button></div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Right column -->
+      <aside class="col right">
+        <div class="card small">
+          <h4>Your Activity</h4>
+          <ul class="activity">
+            <li><div class="dot green"></div>Completed React Assessment <div class="muted tiny">Score: 92/100 • Yesterday</div></li>
+            <li><div class="dot light"></div>Viewed Job: Frontend Lead <div class="muted tiny">2 days ago</div></li>
+            <li><div class="dot muted"></div>Profile Update Reminder <div class="muted tiny">Add your latest project</div></li>
+          </ul>
+        </div>
+
+        <div class="card small center-cta">
+          <h4>Boost Your Profile</h4>
+          <p class="muted small">Verified candidates are 5x more likely to get hired. Take a new skill test today.</p>
+          <button class="btn primary small">Browse Tests</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">© 2024 SkillSight Inc.</footer>
+  </div>
+
+  <script>
+    // small interactive niceties
+    (function(){
+      const filters = document.querySelectorAll('.filter');
+      const jobs = Array.from(document.querySelectorAll('.job-card'));
+
+      function applyFilter(filter){
+        filters.forEach(b=>{
+          const active = b.dataset.filter === filter;
+          b.classList.toggle('active', active);
+          b.setAttribute('aria-pressed', String(active));
+        });
+
+        if(filter === 'all'){
+          jobs.forEach(j=> j.style.display = '');
+          return;
+        }
+
+        if(filter === 'recommended'){
+          jobs.forEach(j=> j.style.display = j.dataset.recommended === 'true' ? '' : 'none');
+          return;
+        }
+
+        if(filter === 'remote'){
+          jobs.forEach(j=> j.style.display = j.dataset.remote === 'true' ? '' : 'none');
+          return;
+        }
+      }
+
+      // initial state
+      applyFilter('all');
+
+      filters.forEach(btn=> btn.addEventListener('click', ()=> applyFilter(btn.dataset.filter || 'all')));
+    })();
+
+    // View all toggle for skill cards: switch scroller to grid (3 per row)
+    (function(){
+      const viewBtn = document.querySelector('.view-all');
+      const cards = document.querySelector('.cards');
+      if(!viewBtn || !cards) return;
+
+      function setGridMode(on){
+        cards.classList.toggle('grid-view', on);
+        viewBtn.setAttribute('aria-expanded', String(on));
+        viewBtn.textContent = on ? 'Show less' : 'View all';
+        // ensure keyboard users are taken to top of the skills container when expanded
+        if(on) cards.scrollTop = 0;
+      }
+
+      viewBtn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const expanded = viewBtn.getAttribute('aria-expanded') === 'true';
+        setGridMode(!expanded);
+        // remove horizontal scroll when showing grid
+        if(!expanded) cards.scrollLeft = 0;
+      });
+    })();
+
+    // Profile menu (hover, click for touch, keyboard support)
+    (function(){
+      const profile = document.querySelector('.profile');
+      if(!profile) return;
+      const menu = profile.querySelector('.profile-menu');
+
+      function openMenu(){
+        profile.classList.add('open');
+        profile.setAttribute('aria-expanded','true');
+        menu.setAttribute('aria-hidden','false');
+      }
+      function closeMenu(){
+        profile.classList.remove('open');
+        profile.setAttribute('aria-expanded','false');
+        menu.setAttribute('aria-hidden','true');
+      }
+
+      // Toggle on click (for touch devices)
+      profile.addEventListener('click', (e)=>{
+        // don't toggle when clicking inside menu items (they handle their own actions)
+        if(e.target.closest('.profile-menu')) return;
+        profile.classList.toggle('open');
+        const open = profile.classList.contains('open');
+        profile.setAttribute('aria-expanded', String(open));
+        menu.setAttribute('aria-hidden', String(!open));
+      });
+
+      // Close on outside click
+      document.addEventListener('click', (e)=>{
+        if(!profile.contains(e.target)) closeMenu();
+      });
+
+      // Keyboard support (Enter/Space to toggle, Escape to close)
+      profile.addEventListener('keydown', (e)=>{
+        if(e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          profile.classList.toggle('open');
+          const open = profile.classList.contains('open');
+          profile.setAttribute('aria-expanded', String(open));
+          menu.setAttribute('aria-hidden', String(!open));
+        }
+        if(e.key === 'Escape') closeMenu();
+      });
+
+      // Handle logout click — redirect to login page
+      const logoutBtn = menu.querySelector('.logout');
+      if(logoutBtn) logoutBtn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        try { localStorage.removeItem('auth'); sessionStorage.removeItem('auth'); } catch(e){}
+        window.location.href = '../login%20pages/index.html';
+      });
+
+    })();
+  </script>
+  <script src="./assign-test-links.js"></script>
+</body>
+</html>
